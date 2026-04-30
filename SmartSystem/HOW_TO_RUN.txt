@@ -1,0 +1,86 @@
+============================================================
+  HOW TO RUN — AI Lab Assignments 9 & 10 (Prolog)
+============================================================
+
+PREREQUISITE
+------------
+Install SWI-Prolog: https://www.swi-prolog.org/Download.html
+Verify install:  swipl --version
+
+------------------------------------------------------------
+ASSIGNMENT 9 — Adversarial Search
+------------------------------------------------------------
+
+Q1 — Minimax Game Tree Evaluation
+  swipl -g halt q1_minimax.pl
+  Expected: prints the optimal root value
+
+Q2 — Optimal Move Selection
+  swipl -g halt q2_optimal_move.pl
+  Expected: prints best child node + its value
+
+Q3 — Alpha-Beta Pruning
+  swipl -g halt q3_alphabeta.pl
+  Expected: same value as Q2, prints "Pruning" at cut nodes
+
+Q4 — Performance Comparison (Node Count)
+  swipl -g halt q4_comparison.pl
+  Expected: prints node counts for both Minimax and Alpha-Beta
+
+Q5 — Tic-Tac-Toe AI
+  swipl -g halt q5_tictactoe.pl
+  Expected: prints the board state after AI picks optimal move
+
+Q6 — Depth-Limited Search
+  swipl -g halt q6_depth_limited.pl
+  Expected: prints result at full depth vs depth-1 (heuristic cutoff)
+
+------------------------------------------------------------
+ASSIGNMENT 10 — Expert Systems
+------------------------------------------------------------
+
+Q1 — Medical Diagnosis
+  swipl -g halt q1_medical.pl
+  Expected: prints disease diagnosis for each patient
+
+Q2 — Employee Promotion
+  swipl -g halt q2_promotion.pl
+  Expected: prints promotion decision + reason for each employee
+
+Q3 — Loan Approval (Backward Chaining)
+  swipl -g halt q3_loan.pl
+  Expected: prints each reasoning step then APPROVED/DENIED
+
+Q4 — Multi-Disease Diagnosis
+  swipl -g halt q4_multidiag.pl
+  Expected: lists all matching diseases, then best match
+
+Q5 — Interactive Expert System  [INTERACTIVE — reads input]
+  swipl q5_interactive.pl
+  When prompted, type:  yes.  or  no.  (with the dot, then Enter)
+  Expected: infers and prints diagnosis from your answers
+
+Q6 — Car Troubleshooting
+  swipl -g halt q6_car.pl
+  Expected: prints problem type + reasoning for each car
+
+Q7 — Knowledge Representation & Reasoning
+  swipl -g halt q7_knowledge.pl
+  Expected: shows eligibility and hiring decision per candidate
+
+Q8 — Explanation-Based Learning
+  swipl -g halt q8_ebl.pl
+  Expected: derives case, generalizes rule, applies it
+
+Q9 — Fault Diagnosis
+  swipl -g halt q9_fault.pl
+  Expected: prints 3-step proof then "FAULT exists"
+
+------------------------------------------------------------
+NOTES
+------------------------------------------------------------
+- All files run standalone; no external libraries needed.
+- The -g halt flag runs the program and exits automatically.
+- Q5 (Assignment 10) is interactive — omit -g halt for it.
+- Tested on SWI-Prolog 9.x. Earlier versions should also work.
+============================================================
